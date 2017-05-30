@@ -9,20 +9,21 @@ public class CommonUtil {
 
     static WebDriver driver;
 
-    public void launchBrowser(){
+    public static void launchBrowser(){
         System.setProperty("webdriver.gecko.driver", "src/main/resources/lib/geckodriver.exe");
         driver = new FirefoxDriver();
     }
 
-    public void click(By by){
+    public static void click(By by){
         driver.findElement(by).click();
     }
 
-    public void enterText(By by, String s){
+    public static void enterText(By by, String s){
         driver.findElement(by).sendKeys(s);
     }
 
-    public void accessUrl(String url){
+    public static void accessUrl(String url){
         driver.get(url);
     }
+
 }
