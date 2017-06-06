@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 /**
  * Created by ankit.ramani on 6/6/2017.
  */
-public class loginPage extends CommonUtil {
+public class LoginPage extends CommonUtil {
 
     static By username = By.id("username");
     static By password = By.name("pwd");
