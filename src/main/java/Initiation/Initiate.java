@@ -1,8 +1,7 @@
 package Initiation;
 
 import browserAction.CommonUtil;
-import pageObjects.loginPage;
-import org.testng.annotations.AfterSuite;
+import pageObjects.LoginPage;
 import org.testng.annotations.BeforeSuite;
 /**
  * Created by ankit.ramani on 5/30/2017.
@@ -13,9 +12,9 @@ public class Initiate extends CommonUtil {
     public void startPoint(){
         CommonUtil.launchBrowser();
         CommonUtil.accessUrl("https://demo.actitime.com");
-        loginPage.enterUsername();
-        loginPage.enterPassword();
-        loginPage.clickLogin();
+        LoginPage.enterUsername();
+        LoginPage.enterPassword();
+        LoginPage.clickLogin();
     }
 
    /* @AfterSuite
