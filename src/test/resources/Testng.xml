@@ -1,0 +1,8 @@
+<suite name="suite 1" verbose="1" >
+    <test name="Regression suite 1" >
+        <classes>
+            <class name="Initiation.Initiate"/>
+
+        </classes>
+    </test>
+</suite>
