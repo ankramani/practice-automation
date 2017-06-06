@@ -2,6 +2,7 @@ package browserAction;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 /**
@@ -12,8 +13,8 @@ public class CommonUtil {
     static WebDriver driver;
 
     public static void launchBrowser(){
-        System.setProperty("webdriver.gecko.driver", "src/main/resources/lib/geckodriver.exe");
-        driver = new FirefoxDriver();
+        System.setProperty("webdriver.chrome.driver", "src/main/resources/lib/chromedriver.exe");
+        driver = new ChromeDriver();
     }
 
     public static void click(By by){
@@ -27,5 +28,7 @@ public class CommonUtil {
     public static void accessUrl(String url){
         driver.get(url);
     }
-
+    public static void closeBrowser(){
+        driver.close();
+    }
 }
