@@ -15,6 +15,7 @@ public class Initiate extends CommonUtil {
         LoginPage.enterUsername();
         LoginPage.enterPassword();
         LoginPage.clickLogin();
+
     }
 
    /* @AfterSuite
