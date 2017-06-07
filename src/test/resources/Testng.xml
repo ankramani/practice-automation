@@ -2,6 +2,7 @@
     <test name="Regression suite 1" >
         <classes>
             <class name="Initiation.Initiate"/>
+            <class name="tests.ExplorationTest"/>
 
         </classes>
     </test>
