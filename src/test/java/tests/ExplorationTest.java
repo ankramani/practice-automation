@@ -8,7 +8,7 @@ import pageObjects.Explore;
 /**
  * Created by ankit.ramani on 6/7/2017.
  */
-public class Exploration extends Initiate {
+public class ExplorationTest extends Initiate {
 
     @Test
     public void explorePage(){
@@ -18,8 +18,4 @@ public class Exploration extends Initiate {
         System.out.println("Explore");
     }
 
-    @Test
-    public void display(){
-        System.out.println("Hello");
-    }
 }
