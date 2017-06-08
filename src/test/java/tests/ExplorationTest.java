@@ -3,7 +3,7 @@ package tests;
 import Initiation.Initiate;
 import browserAction.CommonUtil;
 import org.testng.annotations.Test;
-import pageObjects.Explore;
+import pageObjects.ExplorePage;
 
 /**
  * Created by ankit.ramani on 6/7/2017.
@@ -11,11 +11,11 @@ import pageObjects.Explore;
 public class ExplorationTest extends Initiate {
 
     @Test
-    public void explorePage(){
+    public void startExplore(){
         CommonUtil.iwait();
         CommonUtil.iFrame("videoPlayerId");
-        Explore.videoPlay();
-        System.out.println("Explore");
+        ExplorePage.videoPlay();
+        ExplorePage.exploreButton();
     }
 
 }
